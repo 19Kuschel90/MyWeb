@@ -1,0 +1,865 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+/*float Clear/////////////////////////////////*/
+.row::after,
+.row:hover {
+  /*float Clear*/
+  content: ' ';
+  display: block;
+  clear: both;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
+.Set-mid {
+  width: 96%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.display-none {
+  display: none;
+}
+
+.display-inline-block {
+  display: inline-block;
+}
+
+.New-Texture-Ramen,
+.pointer {
+  cursor: pointer;
+}
+
+.crosshair {
+  cursor: crosshair;
+}
+
+.padding-10 {
+  padding: 10px;
+}
+
+#submit-form h3 {
+  padding: 3%;
+  margin-bottom: 3%;
+  background: #999999;
+}
+
+.Blackback-gruond-in-JS {
+  /* toggle("Blackback-gruond-in-JS"); */
+  background: #cccccc;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  opacity: 0.9;
+  left: 0%;
+  z-index: 201;
+}
+
+.Blackback-gruond-in-JS:hover {
+  /* toggle("Blackback-gruond-in-JS"); */
+  background: #ffffff;
+}
+
+label input {
+  height: 40px;
+  text-align: center;
+}
+
+.submit-Button {
+  width: 40%;
+  height: 50px;
+  background: #bbbbbb;
+}
+
+.has-error {
+  background: #ff0000;
+  border: 2px solid red;
+}
+
+.feld-ok-JS {
+  /* showErrorOrOK(element, message, boolError); */
+  border: 2px solid #00ff00;
+}
+
+.span .OK-message {
+  color: green;
+}
+
+.span .error-message {
+  color: red;
+}
+
+.white-bed {
+  /* !!!G_IntiRegistration() JS!!!*/
+  width: 60%;
+  height: 80%;
+  position: fixed;
+  background: #dddddd;
+  text-align: center;
+  opacity: 1.0;
+  top: 10%;
+  left: -100%;
+  z-index: 10000;
+}
+
+.AGB-box {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+ul {
+  margin-top: 10px;
+}
+
+ul li {
+  display: inline-block;
+}
+
+ul li div,
+ul li a::-moz-selection,
+ul li a {
+  content: " ";
+  text-decoration-style: none;
+  /*No underline*/
+  text-decoration: none;
+  color: #000000;
+}
+
+ul li div,
+ul li a::selection,
+ul li a {
+  content: " ";
+  -webkit-text-decoration-style: none;
+          text-decoration-style: none;
+  /*No underline*/
+  text-decoration: none;
+  color: #000000;
+}
+
+ul li div:hover,
+ul li a:hover {
+  text-decoration: underline;
+}
+
+#dropdown li {
+  background: #aaaaaa;
+  border: solid 2px #000000;
+  display: none;
+}
+
+.show-go-right {
+  margin-right: 20px;
+}
+
+.carusel-2 {
+  border: solid 2px #000000;
+}
+
+.carousel-dot {
+  background-color: #00ffff;
+  border-radius: 50%;
+}
+
+.carousel-dot-white {
+  background-color: #ff00aa;
+}
+
+.carousel-dot:hover {
+  background-color: #ff00aa;
+}
+
+.carousel-inputs div {
+  color: #00ffff;
+}
+
+.carousel-inputs div:hover {
+  color: #ff00aa;
+}
+
+.Over-Flow-hidden {
+  overflow: hidden;
+}
+
+.carousel-content-2 {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-inputs {
+  position: relative;
+  bottom: 25px;
+}
+
+.New-Texture-Ramen {
+  width: 100px;
+  margin: 3px;
+  height: 100px;
+}
+
+.New-Texture-Rahme-2 {
+  width: 200px;
+  height: 200px;
+}
+
+.New-Texture-Ramen,
+.New-Texture-Rahme-2 {
+  overflow: hidden;
+  display: inline-block;
+}
+
+.New-Texture {
+  margin: 3px;
+}
+
+.New-Object,
+.New-Texture {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  /*padding: 10px;*/
+}
+
+.Texture-more-button:hover {
+  background: #1e3a3a;
+}
+
+.Texture-more-button,
+.Texture-description {
+  /*width: 100%;*/
+  background: darkslategrey;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.Texture-more-button {
+  background: darkslategrey;
+}
+
+.margin-top-10px,
+.Texture-more-button {
+  margin-top: 10px;
+}
+
+#Texture-load-more {
+  width: 100%;
+}
+
+.Texture-Box {
+  width: 100%;
+  /*height: 400px;*/
+  background: #aaaaaa;
+  /*padding: 10px;*/
+  margin-top: 2px;
+}
+
+.draw-Mode-Image {
+  width: 200px;
+  height: 200px;
+  margin: 5px;
+  border: 2px solid #000000;
+}
+
+/*animeert*/
+.img-Low-Zoom {
+  display: inline-block;
+  border: 0;
+  position: relative;
+  -webkit-transition: all 200ms ease-in;
+  -webkit-transform: scale(1);
+  -ms-transition: all 200ms ease-in;
+  -ms-transform: scale(1);
+  -moz-transition: all 200ms ease-in;
+  -moz-transform: scale(1);
+  transition: all 200ms ease-in;
+  transform: scale(1);
+  -webkit-animation-name: zoom;
+          animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
+}
+
+.img-Low-Zoom:hover {
+  -webkit-box-shadow: 0px 0px 10px #000000;
+          box-shadow: 0px 0px 10px #000000;
+  z-index: 2;
+  -webkit-transition: all 200ms ease-in;
+  -webkit-transform: scale(1.2);
+  -ms-transition: all 200ms ease-in;
+  -ms-transform: scale(1.2);
+  -moz-transition: all 200ms ease-in;
+  -moz-transform: scale(1.2);
+  transition: all 200ms ease-in;
+  transform: scale(1.2);
+}
+
+.img-lightBox {
+  width: 200px;
+  height: 200px;
+}
+
+.content {
+  width: 90%;
+  margin: 0 auto;
+  border: 7px solid;
+  padding: 20px;
+}
+
+.Ligh-Box-Spawn-Point-Out {
+  position: fixed;
+  z-index: 100000;
+  top: 0%;
+  left: -1000%;
+  bottom: 0%;
+  right: 1000%;
+}
+
+.img-Zoom-ligth-box-big {
+  width: 100%;
+  height: 100%;
+  -webkit-animation-name: zoom;
+          animation-name: zoom;
+  -webkit-animation-duration: 0.9s;
+          animation-duration: 0.9s;
+}
+
+footer {
+  width: 100%;
+  height: 200px;
+}
+
+footer div {
+  padding-top: 10px;
+}
+
+#shader-surface {
+  width: 90%;
+  height: 600px;
+  border: 7px solid;
+}
+
+.controll-buttons {
+  width: 100px;
+  height: 100px;
+}
+
+#editor {
+  width: 100%;
+  height: 600px;
+}
+
+.editor-button-Box {
+  width: 100%;
+  margin-right: 50px;
+  padding-top: 10px;
+}
+
+.editor-buttons {
+  background: #999999;
+}
+
+.editor-buttons:hover {
+  background-color: #e47106;
+}
+
+.Editor-button-Select-Color {
+  background-color: #ff8008;
+}
+
+.editor-buttons-run {
+  padding: 10px;
+  text-align: center;
+}
+
+.editor-buttons {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  padding-bottom: 5px;
+  border-top-left-radius: 20%;
+  border-top-right-radius: 20%;
+  text-align: center;
+}
+
+.midColumn {
+  margin: 0 auto;
+}
+
+label div {
+  color: #444444;
+}
+
+.accordeon-element {
+  display: none;
+}
+
+.accordeon-element-open {
+  display: block;
+}
+
+.animate-right {
+  position: relative;
+  -webkit-animation: animateright 0.9s;
+          animation: animateright 0.9s;
+}
+
+.animate-left {
+  position: relative;
+  -webkit-animation: animateleft 0.9s;
+          animation: animateleft 0.9s;
+}
+
+@-webkit-keyframes animateright {
+  from {
+    right: -300px;
+    opacity: 0;
+  }
+  to {
+    right: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animateright {
+  from {
+    right: -300px;
+    opacity: 0;
+  }
+  to {
+    right: 0;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes animateleft {
+  from {
+    left: -300px;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animateleft {
+  from {
+    left: -300px;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+/* mobile styles */
+@media only screen and (max-width: 524px) {
+  header {
+    height: 140px;
+  }
+  nav ul li {
+    height: 71px;
+  }
+  header h1,
+  nav ul li {
+    font-size: 1rem;
+  }
+  .content {
+    padding: 5px;
+  }
+  .Registration-in-JS {
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    top: 10%;
+    left: 0%;
+  }
+  .helpUser img {
+    width: 50px;
+    height: 50px;
+    opacity: 0.7;
+    position: absolute;
+    top: -10px;
+    left: -20px;
+  }
+  #dropdown li ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 20px;
+    padding: 0;
+    margin: 0;
+  }
+  #dropdown li {
+    width: 200px;
+    position: fixed;
+    display: block;
+  }
+  .show {
+    width: 300px;
+    margin: 0 auto;
+    height: 600px;
+  }
+  .show-text {
+    width: 90%;
+    height: 500px;
+    margin: 20px;
+  }
+  .introduction {
+    font-weight: bolder;
+    padding-bottom: 60px;
+  }
+  label input {
+    width: 90%;
+  }
+  #Background-black-JS {
+    z-index: 100;
+  }
+  #Handy-Background-black-JS {
+    z-index: 50;
+  }
+  .canvas-pos {
+    display: block;
+    width: 100%;
+    height: 600px;
+    text-align: center;
+  }
+  #Go-Left {
+    position: fixed;
+    left: -1000%;
+    display: block;
+  }
+  .Handy-margin-top-100 {
+    margin-top: 100px;
+  }
+  .Handy-margin-top-400-bottom-20 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  ul li {
+    margin: 10px;
+    display: block;
+  }
+  ul {
+    height: 0px;
+  }
+  #dropdown li ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0;
+    margin: 0;
+  }
+  #dropdown li {
+    /* width: 200px; */
+    position: relative;
+    display: block;
+  }
+  .Handy-display-inline-block {
+    display: inline-block;
+    margin-top: 0px;
+  }
+  #Handy-Menu-Button {
+    width: 100px;
+    padding: 15px;
+    z-index: 1000;
+  }
+  #Handy-Menu-Button:hover {
+    width: 100px;
+  }
+  .Handy-Display-None {
+    display: none;
+  }
+  .Handy-width-70 {
+    width: 70px;
+  }
+  .carusel-2 {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+  }
+  .carousel-inputs-left,
+  .carousel-inputs-right {
+    position: absolute;
+    bottom: 50%;
+  }
+  .carousel-inputs-right {
+    right: 0;
+  }
+  .carousel-inputs-left {
+    left: 0;
+  }
+  .Ligh-Box-Spawn-Point-In {
+    position: fixed;
+    z-index: 100000;
+    top: 10%;
+    left: 5%;
+    bottom: 10%;
+    right: 5%;
+  }
+}
+
+/* End @media only screen and (max-width:520px) */
+/*tablet styles*/
+@media only screen and (min-width: 525px) and (max-width: 1100px) {
+  .Registration-in-JS {
+    /* toggle("Registration-in-JS"); */
+    height: 600px;
+    position: absolute;
+    top: 15%;
+    left: 25%;
+  }
+  .Ligh-Box-Spawn-Point-In {
+    position: fixed;
+    z-index: 100000;
+    top: 5%;
+    left: 5%;
+    bottom: 10%;
+    right: 5%;
+  }
+  #dropdown li ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0;
+    margin: 0;
+  }
+  #dropdown li {
+    position: fixed;
+    display: block;
+    bottom: 40px;
+  }
+  ul li div {
+    margin-right: 0px;
+  }
+  ul li a {
+    margin-right: 20px;
+  }
+  #Handy-Menu-Button {
+    display: none;
+  }
+  .show {
+    width: 525px;
+    margin: 0 auto;
+  }
+  .show-tablet {
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .show-text {
+    width: 90%;
+    margin: 20px;
+  }
+  .carusel-2 {
+    width: 525px;
+    height: 525px;
+    margin: 0 auto;
+  }
+  .carousel-dot {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin-left: 40px;
+  }
+  .carousel-inputs-left,
+  .carousel-inputs-right {
+    position: absolute;
+    bottom: 0px;
+  }
+  .carousel-inputs-right {
+    right: 0;
+  }
+  .carousel-inputs-left {
+    left: 0;
+  }
+  .footer-tablet {
+    margin-bottom: 30px;
+  }
+  .canvas-pos {
+    display: block;
+    width: 100%;
+    height: 600px;
+    text-align: center;
+  }
+  .midColumn {
+    width: 100%;
+  }
+  .introduction {
+    font-weight: bolder;
+    padding-bottom: 30px;
+  }
+}
+
+/* End @media only screen and (min-width:520px) and (max-width:1100px) */
+/*desktop styles*/
+@media only screen and (min-width: 1100px) {
+  #dropdown li ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 20px;
+    padding: 0;
+    margin: 0;
+  }
+  #dropdown li {
+    position: fixed;
+    display: block;
+  }
+  label input {
+    width: 60%;
+  }
+  ul li a {
+    margin-right: 50px;
+  }
+  ul li div {
+    margin-right: 50px;
+  }
+  /* /////////////////////// */
+  /* 1. carusel */
+  .carusel-2 {
+    width: 48%;
+    height: 550px;
+    margin: 20px;
+    /*max-width: 400px;*/
+  }
+  .carousel-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-left: 40px;
+  }
+  .carousel-inputs-right,
+  .carousel-inputs-left {
+    position: absolute;
+    bottom: 0px;
+  }
+  .carousel-inputs-right {
+    right: 0;
+  }
+  .carousel-inputs-left {
+    left: 0;
+  }
+  #Handy-Menu-Button::-moz-selection {
+    content: " ";
+  }
+  #Handy-Menu-Button::selection {
+    content: " ";
+  }
+  /* .editor-buttons {} */
+  .show {
+    width: 60%;
+    min-width: 1050px;
+    /* height: 600px; */
+    /* go in mid*/
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+  .show-text {
+    float: right;
+    width: 400px;
+    height: 550px;
+    margin: 20px;
+    padding: 40px;
+    padding-top: 120px;
+  }
+  .show-go-left {
+    margin-left: 20px;
+  }
+  /* .show-go-right {
+        margin-right: 20px;
+    } */
+  /* ////////////////////////////////// */
+  /* Column */
+  .rightColumn {
+    width: 49%;
+    float: right;
+  }
+  .leftColumn {
+    width: 49%;
+    float: left;
+  }
+  /* //////////////////////////////// */
+  /* Registration */
+  .Registration-in-JS {
+    /* toggle("Registration-in-JS"); */
+    height: 700px;
+    position: absolute;
+    top: 15%;
+    left: 25%;
+  }
+  .canvas-pos {
+    display: block;
+    width: 100%;
+    height: 600px;
+    text-align: center;
+  }
+  .Destop-float-left {
+    float: left;
+  }
+  .Destop-float-right {
+    float: right;
+  }
+  .Ligh-Box-Spawn-Point-In {
+    position: fixed;
+    z-index: 100000;
+    top: 10%;
+    left: 5%;
+    bottom: 10%;
+    right: 5%;
+  }
+  .midColumn {
+    width: 45%;
+  }
+}
+
+/* End @media only screen and (min-width:1100px) */
+/*# sourceMappingURL=shader.css.map */

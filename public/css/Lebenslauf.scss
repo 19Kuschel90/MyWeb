@@ -1,0 +1,51 @@
+main {
+    background: #ffffff;
+    width: 80%;
+    color: black;
+    margin: 0 auto;
+    padding: 60px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+table {
+    width: 100%;
+}
+
+th,
+td {
+    color: black;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr {
+    height: 120%;
+}
+
+td {
+    padding: 20px;
+}
+
+.jobDescription {
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.left {
+    width: 30%;
+    vertical-align: center;
+}
+
+.time,
+.job {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.Where {
+    font-style: italic;
+    font-size: 1.1rem;
+}

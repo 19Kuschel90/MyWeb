@@ -1,0 +1,54 @@
+article {
+    position: relative;
+    border: 2px solid;
+    padding: 20px;
+    margin: 10%;
+    resize: horizontal;
+    overflow: visible;
+    font-size: 2rem;
+}
+
+article .img img {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 3px;
+    right: 34px;
+}
+
+article .inerBox .Tools p {
+    font-style: italic;
+}
+
+article .inerBox .text p {
+    width: 70%;
+}
+
+.Downloadbutton {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+.Downloadbutton:hover {
+    background-color: #3e8e41
+}
+
+.Downloadbutton:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.text div ul {
+    padding-left: 50px;
+}

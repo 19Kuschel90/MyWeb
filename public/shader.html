@@ -1,0 +1,214 @@
+<!DOCTYPE HTML SYSTEM>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/shader.css">
+    <title>WebGL - Shader 1 | Editor Vertex Shader Fragment Shader Source Code Draw Mode Texture </title>
+</head>
+
+<body>
+    <Header>
+        <h1>Heiko Kuschel</h1>
+        <nav>
+            <ul>
+                <li class="select"><a href="./index.html">Projekte und anderes</a></li>
+                <!-- <li><a href="./me">Über mich</a></li> -->
+                <li><a href="./Kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </Header>
+    <main>
+        <div class="content row ">
+            <div class="midColumn Destop-float-left">
+                <div class="Texture-description">
+                    <h1>3D World</h1>
+                </div>
+
+                <div class="canvas-pos">
+                    <canvas id="shader-surface" width="600" height="600px" class="crosshair">no support </canvas>
+                </div>
+                <!--/////////////////////////////////////////////////////////////////////////////////-->
+                <div class="Texture-Box">
+                    <div class="Texture-description">New Object</div>
+                    <a href="#shader-surface">
+                        <div class="Set-mid">
+                            <div class="New-Texture-Ramen pointer">
+                                <img src="../images/cube.png" alt="Cube" class="img-Low-Zoom   New-Object">
+                            </div>
+                            <div class="New-Texture-Ramen pointer">
+                                <img src="../images/Sphere.png" alt="Sphere" class="img-Low-Zoom   New-Object">
+                            </div>
+                            <div class="New-Texture-Ramen pointer">
+                                <img src="../images/Logo.png" alt="Logo" class="img-Low-Zoom   New-Object">
+                            </div>
+                            <div class="New-Texture-Ramen pointer">
+                                <img src="../images/Icoshere.png" alt="Icoshere" class="img-Low-Zoom   New-Object">
+                            </div>
+                            <div class="New-Texture-Ramen pointer">
+                                <img src="../images/Torus.png" alt="Torus" class="img-Low-Zoom   New-Object">
+                            </div>
+                            <div class="New-Texture-Ramen pointer">
+                                <img src="../images/Cone.png" alt="Cone" class="img-Low-Zoom   New-Object">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!--///////////////////////////////////////////////////////////-->
+
+                <h2 class="Texture-description">Draw Mode</h2>
+                <div class="Set-mid margin-top-10px">
+                    <p>How should the object be drawn?</p>
+                    <form>
+                        <select id="mySelect" class="pointer">
+                    <option value="gl.TRIANGLES">TRIANGLES</option>
+                    <option value="gl.TRIANGLE_STRIP">TRIANGLE STRIP</option>
+                    <option value="gl.TRIANGLE_FAN">TRIANGLE FAN</option>
+                    <option value="gl.POINTS">POINTS</option>
+                    <option value="gl.LINES">LINES</option>
+                     <option value="gl.LINE_STRIP">LINE STRIP</option>
+                        <option value="gl.LINE_LOOP">LINE LOOP</option>
+                    </select>
+                    </form>
+                    <!--///////////////////////////////////////////////////////////-->
+
+                    <!--Toggel-->
+                    <div class="padding-10 row">
+                        <div class="accordeon-element accordeon-element-open">
+                            <h3>TRIANGLES</h3>
+                            <p>
+                                A series of separate triangles. The triangles given by vertices (v0, v1, v2), (v3, v4, v5), ... are drawn. If the number of vertices is not a multiple of 3, the remaining vertices are ignored.
+                            </p>
+                            <a href="../images/GLLINSTRAINGLES1600x1200.png" target="_blank">
+                                <img src="../images/GLLINSTRAINGLES1600x1200.png" alt="TRIANGLES" class="draw-Mode-Image">
+                            </a>
+                        </div>
+                        <div class="accordeon-element">
+                            <h3>TRIANGLE STRIP</h3>
+                            <p>
+                                A series of connected triangles in strip fashion. The first three vertices form the first triangle and the second triangle is formed from the next vertex and one of the sides of the first triangle. The triangles are drawn given by (v0, v1, v2), (v2, v1,
+                                v3), (v2, v3, v4) ... (Pay attention to the order of vertices.)
+                            </p>
+                            <a href="../images/GLLINSTRAINGLESSTRAIP1600x1200.png" target="_blank">
+                                <img src="../images/GLLINSTRAINGLESSTRAIP1600x1200.png" alt="TRIANGLE STRIP" class="draw-Mode-Image">
+                            </a>
+                        </div>
+                        <div class="accordeon-element">
+                            <h3>TRIANGLE FAN</h3>
+                            <p>
+                                A series of connected triangles sharing the first vertex in fanlike fashion. The first three vertices form the first triangle and the second triangle is formed from the next vertex, one of the sides of the first triangle, and the first vertex. The triangles
+                                are drawn given by (v0, v1, v2), (v0, v2, v3), (v0, v3, v4), ...
+                            </p>
+                            <a href="../images/GLLINSTRAINGLFAN1600x1200.png" target="_blank">
+                                <img src="../images/GLLINSTRAINGLFAN1600x1200.png" alt="TRIANGLE FAN" class="draw-Mode-Image">
+                            </a>
+                        </div>
+                        <div class="accordeon-element">
+                            <h3>POINTS</h3>
+                            <p>
+                                A series of points. The points are drawn at v0, v1, v2 ...
+                            </p>
+                            <a href="../images/GLPOINTS1600x1200.png" target="_blank">
+                                <img src="../images/GLPOINTS1600x1200.png" alt="point" class="draw-Mode-Image">
+                            </a>
+                        </div>
+                        <div class="accordeon-element">
+                            <h3>LINES</h3>
+                            <p>
+                                A series of unconnected line segments. The individual lines are drawn between vertices given by (v0, v1), (v2, v3), (v4, v5)... If the number of vertices is odd, the last one is ignored.
+                            </p>
+                            <a href="../images/GLLINS1600x1200.png" target="_blank">
+                                <img src="../images/GLLINS1600x1200.png" alt="LINES" class="draw-Mode-Image">
+                            </a>
+                        </div>
+                        <div class="accordeon-element">
+                            <h3>LINE STRIP</h3>
+                            <p>
+                                A series of connected line segments. The line segments are \ drawn between vertices given by (v0, v1), (v1, v2), (v2, v3), ... The first vertex becomes the start point of the first line, the second vertex becomes the end point of the first line and the
+                                start point of the second line, and so on. The i-th (i big 1) vertex becomes the start point of the i-th line and the end point of the i-1-th line. (The last vertex becomes the end point of the last line.)
+                            </p>
+                            <a href="../images/GLLINSSTRIP1600x1200.png" target="_blank">
+                                <img src="../images/GLLINSSTRIP1600x1200.png" alt="LINE STRIP" class="draw-Mode-Image">
+                            </a>
+                        </div>
+                        <div class="accordeon-element">
+                            <h3>LINE LOOP</h3>
+                            <p>
+                                A series of connected line segments. In addition to the lines drawn by gl.LINE_STRIP, the line between the last vertex and the first vertex is drawn. The line segments drawn are (v0, v1), (v1, v2), ..., and (v n, v0). v n is the last vertex.
+                            </p>
+                            <a href="../images/GLLINSLOOP1600x1200.png" target="_blank">
+                                <img src="../images/GLLINSLOOP1600x1200.png" alt="LINE LOOP" class="draw-Mode-Image">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--////////////////////////////////////////////////////////-->
+            <div class="midColumn Destop-float-right">
+                <div class="Texture-description">
+
+                    <h2>Editor</h2>
+                </div>
+                <div class="editor-button-Box">
+                    <div id="Set-editor-of-VS" class="editor-buttons float-left pointer">Vertex Shader</div>
+                    <div id="Set-editor-of-FS" class="editor-buttons float-left pointer">Fragment Shader</div>
+                    <div class="helpUser setHelp ">
+                        <div>
+                            <img src="./images/Lamp.svg" alt="helptextbubble" class=" helpUserImg ">
+                            <p class="helpText">Klicken Sie auf den Button “Source Code”. Gehen sie auch in die line “167” und können die background color ändern (gl.clearColor(0.9, 0.0, 0.1, 1.0); ) Indem sie eine Zahl von 0 bis 1 verändern. Um ihre Änderung zu bestätigen
+                                klicken Sie auf Run.
+
+                            </p>
+                        </div>
+                    </div>
+                    <div id="Set-editor-of-Soure" class="editor-buttons float-left pointer">Source Code</div>
+                </div>
+                <!--//////////////////////////////////////-->
+                <!--// Editor-->
+                <pre id="editor">
+                </pre>
+                <!--/////////////////////////////////////////////////////-->
+                <a href="#shader-surface">
+                    <div class="editor-buttons-run pointer Texture-more-button">
+                        Run</div>
+                </a>
+                <a href="#shader-surface">
+                    <div class="editor-buttons-rest pointer Texture-more-button">
+                        Rest</div>
+                </a>
+
+                <div class="Texture-Box">
+                    <div class="Texture-description">
+                        <h2>Texture</h2>
+                    </div>
+                    <div class="Set-mid">
+
+
+                        <!--Images spwan in js-->
+                        <div id="Texture-load-more"></div>
+                    </div>
+                    <a href="#Texture-more-buttonID">
+                        <div class="Texture-more-button pointer" id="Texture-more-buttonID">Texture More</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/dropdown.js"></script>
+    <script src="../js/shader.js" type="text/javascript"></script>
+    <script src="../js/gl-matrix.js" type="text/javascript"></script>
+    <script src="../js/util.js" type="text/javascript"></script>
+    <script src="../js/ace/src/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/TextureManger.js" type="text/javascript"></script>
+    <script src="../js/hover.js" type="text/javascript"></script>
+    <script src="./js/helpUser.js"></script>
+
+</body>
+
+</html>

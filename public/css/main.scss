@@ -1,0 +1,78 @@
+@import 'article';
+@import 'color';
+@import 'helpUser';
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    background: $backgroundColor;
+    color: $mainTextColor;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 5rem;
+}
+
+nav {
+    font-size: 3rem;
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ul li {
+    text-align: center;
+    list-style: none;
+    border: 10px solid floralwhite;
+    padding: 10px;
+}
+
+.select {
+    background-color: $selectColor;
+}
+
+p {
+    padding-top: 3px;
+}
+
+
+/* unvisited link */
+
+a:link {
+    color: $mainTextColor;
+}
+
+
+/* visited link */
+
+a:visited {
+    color: $mainTextColor;
+}
+
+
+/* mouse over link */
+
+a:hover {
+    color: $mainTextColorHover;
+}
+
+
+/* selected link */
+
+a:active {
+    color: $mainTextColor;
+}
+
+.kontakt {
+    text-align: center;
+    font-size: 3rem;
+    padding: 151px;
+}
