@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
 const app = express();
-const port = 6000;
+const port = 3000;
 const public = '/public';
 const img = '/rec/img/';
 app.use(express.static('public'));
