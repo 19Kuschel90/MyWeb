@@ -24,6 +24,18 @@ article .inerBox .text p {
   width: 70%;
 }
 
+.inerBox div {
+  margin-bottom: 15px;
+}
+
+.dec {
+  font-size: 1.1rem;
+}
+
+.pddingleft5 {
+  padding-left: 2%;
+}
+
 .Downloadbutton {
   display: inline-block;
   padding: 15px 25px;
@@ -33,7 +45,7 @@ article .inerBox .text p {
   text-decoration: none;
   outline: none;
   color: #fff;
-  background-color: #4CAF50;
+  background-color: crimson;
   border: none;
   border-radius: 15px;
   -webkit-box-shadow: 0 9px #999;
@@ -41,11 +53,11 @@ article .inerBox .text p {
 }
 
 .Downloadbutton:hover {
-  background-color: #3e8e41;
+  background-color: #ac1634;
 }
 
 .Downloadbutton:active {
-  background-color: #3e8e41;
+  background-color: #ac1634;
   -webkit-box-shadow: 0 5px #666;
           box-shadow: 0 5px #666;
   -webkit-transform: translateY(4px);
@@ -179,5 +191,9 @@ a:active {
   text-align: center;
   font-size: 3rem;
   padding: 151px;
+}
+
+footer {
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */
