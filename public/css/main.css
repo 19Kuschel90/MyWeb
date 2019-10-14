@@ -6,6 +6,7 @@ article {
   resize: horizontal;
   overflow: visible;
   font-size: 2rem;
+  background: #624cb9;
 }
 
 article .img img {
@@ -69,11 +70,11 @@ article .inerBox .text p {
 }
 
 .helpUser img {
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
   opacity: 0.7;
   position: absolute;
-  top: -50px;
+  top: -60px;
   left: -50px;
 }
 
