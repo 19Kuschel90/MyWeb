@@ -452,15 +452,28 @@ label div {
 /* mobile styles */
 
 @media only screen and (max-width:524px) {
+    h1 {
+        margin: 0px;
+    }
     header {
-        height: 140px;
+        // height: 140px;
     }
     nav ul li {
-        height: 71px;
+        //  height: 71px;
+    }
+    .Texture-description {
+        margin-top: 0px;
     }
     header h1,
     nav ul li {
         font-size: 1rem;
+    }
+    nav {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    #shader-surface {
+        height: 300px;
     }
     .content {
         padding: 5px;
@@ -519,7 +532,7 @@ label div {
     .canvas-pos {
         display: block;
         width: 100%;
-        height: 600px;
+        height: 310px;
         text-align: center;
     }
     #Go-Left {
@@ -539,7 +552,7 @@ label div {
         display: block;
     }
     ul {
-        height: 0px;
+        //  height: 0px;
     }
     #dropdown li ul {
         display: none;
