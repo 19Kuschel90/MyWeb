@@ -2,11 +2,11 @@
   article {
     position: relative;
     border: 2px solid;
-    padding: 0%;
+    padding: 1%;
     margin: 0%;
     resize: horizontal;
     overflow: visible;
-    font-size: 2rem;
+    font-size: 1rem;
     background: #2b2828;
   }
   nav {
