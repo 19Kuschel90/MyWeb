@@ -1,210 +1,200 @@
 article {
-    position: relative;
-    border: 2px solid;
-    padding: 20px;
-    margin: 10%;
-    resize: horizontal;
-    overflow: visible;
-    font-size: 2rem;
-    background: #2b2828;
+  position: relative;
+  border: 2px solid;
+  padding: 20px;
+  margin: 10%;
+  resize: horizontal;
+  overflow: visible;
+  font-size: 2rem;
+  background: #2b2828;
 }
 
 article .img img {
-    width: 150px;
-    height: 150px;
-    position: absolute;
-    top: 3px;
-    right: 34px;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 3px;
+  right: 34px;
 }
 
 article .inerBox .Tools p {
-    font-style: italic;
+  font-style: italic;
 }
 
 article .inerBox .text p {
-    width: 70%;
+  width: 70%;
 }
 
 .inerBox div {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .dec {
-    font-size: 1.1rem;
+  font-size: 1.1rem;
 }
 
 .pddingleft5 {
-    padding-left: 2%;
+  padding-left: 2%;
 }
 
 .Downloadbutton {
-    display: inline-block;
-    padding: 15px 25px;
-    font-size: 24px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    outline: none;
-    color: #fff;
-    background-color: crimson;
-    border: none;
-    border-radius: 15px;
-    -webkit-box-shadow: 0 9px #999;
-    box-shadow: 0 9px #999;
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: crimson;
+  border: none;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 9px #999;
+          box-shadow: 0 9px #999;
 }
 
 .Downloadbutton:hover {
-    background-color: #ac1634;
+  background-color: #ac1634;
 }
 
 .Downloadbutton:active {
-    background-color: #ac1634;
-    -webkit-box-shadow: 0 5px #666;
-    box-shadow: 0 5px #666;
-    -webkit-transform: translateY(4px);
-    transform: translateY(4px);
+  background-color: #ac1634;
+  -webkit-box-shadow: 0 5px #666;
+          box-shadow: 0 5px #666;
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
 }
 
 .text div ul {
-    padding-left: 50px;
+  padding-left: 50px;
 }
 
 .helpUser img {
-    width: 90px;
-    height: 90px;
-    opacity: 0.7;
-    position: absolute;
-    top: -60px;
-    left: -50px;
+  width: 90px;
+  height: 90px;
+  opacity: 0.7;
+  position: absolute;
+  top: -60px;
+  left: -50px;
 }
 
 .helpUser:hover img {
-    opacity: 0.9;
+  opacity: 0.9;
 }
 
 .helpUser:hover .helpText {
-    visibility: visible;
+  visibility: visible;
 }
 
 .helpUser-smal {
-    width: 50px;
-    height: 50px;
-    opacity: 0.7;
-    position: absolute;
-    top: -25px;
-    left: -25px;
+  width: 50px;
+  height: 50px;
+  opacity: 0.7;
+  position: absolute;
+  top: -25px;
+  left: -25px;
 }
 
 .helpUser-smal:hover img {
-    opacity: 0.9;
+  opacity: 0.9;
 }
 
 .helpUser-smal:hover .helpText {
-    visibility: visible;
+  visibility: visible;
 }
 
 .helpText {
-    max-width: 80%;
-    visibility: hidden;
-    position: absolute;
-    top: -70px;
-    left: 30px;
-    color: white;
-    background-color: #ffe000;
-    color: black;
-    border: 3px solid gray;
-    padding: 3px;
-    border-radius: 9%;
+  max-width: 80%;
+  visibility: hidden;
+  position: absolute;
+  top: -70px;
+  left: 30px;
+  color: white;
+  background-color: #ffe000;
+  color: black;
+  border: 3px solid gray;
+  padding: 3px;
+  border-radius: 9%;
 }
 
 .setHelp {
-    position: relative;
+  position: relative;
 }
 
 * {
-    padding: 0;
-    margin: 0;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
-    font-size: 16px;
-    background: #000000;
-    color: powderblue;
+  font-size: 16px;
+  background: #000000;
+  color: powderblue;
 }
 
 header h1 {
-    text-align: center;
-    font-size: 5rem;
+  text-align: center;
+  font-size: 5rem;
 }
 
 nav {
-    font-size: 3rem;
-    padding: 10px;
+  font-size: 3rem;
+  padding: 10px;
 }
 
 nav ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: space-evenly;
-    -ms-flex-pack: space-evenly;
-    justify-content: space-evenly;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 nav ul li {
-    text-align: center;
-    list-style: none;
-    border: 10px solid floralwhite;
-    padding: 10px;
+  text-align: center;
+  list-style: none;
+  border: 10px solid floralwhite;
+  padding: 10px;
 }
 
 .select {
-    background-color: #393f65;
+  background-color: #2700ff;
 }
 
 p {
-    padding-top: 3px;
+  padding-top: 3px;
 }
-
 
 /* unvisited link */
-
 a:link {
-    color: powderblue;
+  color: powderblue;
 }
-
 
 /* visited link */
-
 a:visited {
-    color: powderblue;
+  color: powderblue;
 }
-
 
 /* mouse over link */
-
 a:hover {
-    color: #94e5f0;
+  color: #94e5f0;
 }
 
-
 /* selected link */
-
 a:active {
-    color: powderblue;
+  color: powderblue;
 }
 
 .kontakt {
-    text-align: center;
-    font-size: 3rem;
-    padding: 151px;
+  text-align: center;
+  font-size: 3rem;
+  padding: 151px;
 }
 
 footer {
-    text-align: center;
+  text-align: center;
 }
-
-
 /*# sourceMappingURL=main.css.map */
