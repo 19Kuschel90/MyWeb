@@ -1,3 +1,11 @@
+// Settings
+document.getElementById("Settings").onchange = () => {
+    var x = document.getElementById(document.getElementById("Settings").value);
+    document.getElementById("MinRoundtime").value = x.getAttribute("time");
+    document.getElementById("MinRoundSize").value = x.getAttribute("size");
+}
+
+// Run
 document.getElementById("run").addEventListener("click", init);
 
 function init() {
